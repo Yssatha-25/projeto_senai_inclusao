@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-contrast="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sem Barreiras — Tecnologia para todos</title>
+  <meta name="description" content="Blog sobre acessibilidade digital, tecnologia assistiva e as barreiras que ainda existem em sites e aplicativos.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <p class="brand-name">Sem Barreiras</p>
+        <p class="brand-slogan">Tecnologia para todos: incluir é o padrão, não a exceção.</p>
+      </div>
+
+      <button id="btn-contraste" type="button" class="btn-contraste" aria-pressed="false">
+        Ativar alto contraste
+      </button>
+
+      <nav class="site-nav" aria-label="Menu principal">
+        <button id="btn-menu" class="btn-menu" type="button" aria-expanded="false" aria-controls="lista-menu">
+          Menu
+        </button>
+        <ul id="lista-menu" class="nav-lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#o-que-e">O que é acessibilidade</a></li>
+          <li><a href="#barreiras">Barreiras comuns</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#podcast">Podcast</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== APRESENTAÇÃO ===================== -->
+  <section id="inicio" class="apresentacao" aria-labelledby="titulo-apresentacao">
+    <div class="apresentacao-inner">
+      <h1 id="titulo-apresentacao">Acessibilidade não é um recurso extra. É a porta de entrada.</h1>
+      <p class="apresentacao-texto">
+        Todos os dias, milhões de pessoas tentam pagar uma conta, estudar, se candidatar a uma vaga
+        ou simplesmente conversar com a família usando um site ou aplicativo. Para grande parte
+        dessas pessoas — cegas, com baixa visão, surdas, com mobilidade reduzida, neurodivergentes
+        ou idosas — essa tarefa simples ainda esbarra em barreiras que a maioria de nós nunca percebe.
+        Inclusão e acessibilidade digital significam projetar tecnologia que funcione para qualquer
+        pessoa, independentemente de como ela enxerga, ouve, se move ou interpreta uma tela.
+      </p>
+      <p class="apresentacao-destaque">
+        Mais de <strong>1 bilhão de pessoas</strong> no mundo vivem com algum tipo de deficiência.
+        Um site inacessível não é um detalhe técnico — é uma porta fechada.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="conteudo-principal">
+    <article class="conteudo" aria-labelledby="o-que-e">
+
+      <section id="o-que-e" class="bloco-texto">
+        <h2>O que é acessibilidade digital?</h2>
+        <p>
+          Acessibilidade digital é o conjunto de práticas que garante que sites, aplicativos e
+          sistemas possam ser usados por qualquer pessoa, incluindo quem depende de tecnologia
+          assistiva para navegar. Isso envolve desde escolhas simples — como um bom contraste de
+          cores e textos alternativos em imagens — até estruturas mais complexas, como uma
+          navegação totalmente operável pelo teclado ou compatível com leitores de tela.
+        </p>
+        <p>
+          Diferente do que muita gente pensa, acessibilidade não beneficia só quem tem deficiência
+          permanente. Uma legenda ajuda quem está em um ambiente barulhento. Um contraste alto ajuda
+          quem está sob sol forte. Uma navegação por teclado ajuda quem quebrou o braço e não
+          consegue usar o mouse. Projetar para o extremo cria produtos melhores para todos.
+        </p>
+
+        <h3>Tecnologia assistiva: pontes, não muletas</h3>
+        <p>
+          Leitores de tela, teclados adaptados, softwares de reconhecimento de voz, lupas de tela e
+          dispositivos de controle por movimento dos olhos são exemplos de tecnologia assistiva.
+          Eles não "consertam" a pessoa — eles constroem a ponte entre a pessoa e um mundo digital
+          que, na maioria das vezes, foi criado sem pensar nela. O problema raramente está na
+          pessoa; está na ausência de acessibilidade no que foi desenvolvido.
+        </p>
+      </section>
+
+      <section id="barreiras" class="bloco-texto">
+        <h3>Barreiras invisíveis em sites e aplicativos</h3>
+        <p>
+          Grande parte das barreiras digitais é invisível para quem não depende de tecnologia
+          assistiva. Algumas das mais comuns:
+        </p>
+        <ul class="lista-barreiras">
+          <li><strong>Imagens sem texto alternativo:</strong> quem usa leitor de tela simplesmente não sabe o que a imagem mostra.</li>
+          <li><strong>Contraste de cores insuficiente:</strong> textos claros sobre fundos claros dificultam a leitura para pessoas com baixa visão.</li>
+          <li><strong>Formulários sem rótulos claros:</strong> campos sem identificação confundem leitores de tela e usuários com dificuldades cognitivas.</li>
+          <li><strong>Vídeos sem legenda ou transcrição:</strong> excluem pessoas surdas ou com deficiência auditiva.</li>
+          <li><strong>Sites que não funcionam com teclado:</strong> impedem quem não consegue usar o mouse de navegar.</li>
+          <li><strong>Botões e links sem descrição:</strong> "clique aqui" não diz nada para quem ouve a tela em vez de vê-la.</li>
+        </ul>
+
+        <h3>Os quatro princípios que guiam a acessibilidade (WCAG)</h3>
+        <p>
+          As Diretrizes de Acessibilidade para Conteúdo Web (WCAG) organizam boas práticas em
+          quatro princípios, resumidos pela sigla <strong>POUR</strong>:
+        </p>
+        <dl class="lista-principios">
+          <dt>Perceptível</dt>
+          <dd>A informação precisa poder ser percebida por qualquer sentido disponível — visão, audição ou tato.</dd>
+          <dt>Operável</dt>
+          <dd>A interface precisa funcionar com teclado, voz ou outros métodos além do mouse.</dd>
+          <dt>Compreensível</dt>
+          <dd>O conteúdo e a navegação precisam ser previsíveis e fáceis de entender.</dd>
+          <dt>Robusto</dt>
+          <dd>O conteúdo precisa funcionar bem com diferentes tecnologias assistivas, hoje e no futuro.</dd>
+        </dl>
+      </section>
+
+      <!-- ===================== GALERIA ===================== -->
+      <section id="galeria" class="galeria" aria-labelledby="titulo-galeria">
+        <h2 id="titulo-galeria">Acessibilidade em cena</h2>
+        <p>Imagens que ilustram como a tecnologia assistiva aparece na prática, do teclado à tela do celular.</p>
+
+        <div class="galeria-grade">
+
+          <figure class="galeria-item">
+            <!--
+              PROMPT PARA IA DE IMAGEM:
+              "Foto realista e bem iluminada de close nas mãos de uma pessoa sobre o teclado de um notebook,
+              dedo pressionando a tecla Tab, com a tela ao fundo desfocada mostrando um link com contorno de
+              foco visível em azul. Estilo fotográfico, ambiente de trabalho claro e acolhedor."
+            -->
+            <img src="imagem-teclado.jpg"
+                 alt="Mãos de uma pessoa sobre o teclado de um notebook, pressionando a tecla Tab, com um link em destaque na tela ao fundo indicando o foco de navegação.">
+            <figcaption>Navegar sem mouse: o teclado como caminho principal para muitas pessoas.</figcaption>
+          </figure>
+
+          <figure class="galeria-item">
+            <!--
+              PROMPT PARA IA DE IMAGEM:
+              "Ilustração digital dividida em duas metades lado a lado comparando a mesma tela de aplicativo:
+              à esquerda, texto cinza claro sobre fundo branco, difícil de ler; à direita, a mesma tela com
+              texto preto sobre fundo branco, alto contraste, fácil de ler. Estilo clean, cores neutras,
+              tipografia simples."
+            -->
+            <img src="imagem-contraste.jpg"
+                 alt="Comparação lado a lado da mesma tela de aplicativo: à esquerda, texto cinza claro de baixo contraste, quase ilegível; à direita, a mesma tela com texto preto de alto contraste, fácil de ler.">
+            <figcaption>Pequenas mudanças de contraste fazem grande diferença na leitura.</figcaption>
+          </figure>
+
+          <figure class="galeria-item">
+            <!--
+              PROMPT PARA IA DE IMAGEM:
+              "Foto realista de uma pessoa com deficiência visual, sorrindo, usando fones de ouvido e segurando
+              um smartphone próximo ao rosto, como se estivesse ouvindo o leitor de tela. Luz natural suave,
+              fundo neutro desfocado, expressão tranquila e confiante."
+            -->
+            <img src="imagem-leitor-de-tela.jpg"
+                 alt="Pessoa com deficiência visual sorri enquanto usa fones de ouvido e segura um smartphone próximo ao rosto, ouvindo o conteúdo por meio de um leitor de tela.">
+            <figcaption>O smartphone com leitor de tela ativo: autonomia no bolso.</figcaption>
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- ===================== VÍDEO ===================== -->
+      <section id="video" class="secao-midia" aria-labelledby="titulo-video">
+        <h2 id="titulo-video">Vídeo: um dia de navegação com leitor de tela</h2>
+        <p>Material em vídeo, roteirizado e produzido com apoio de inteligência artificial, mostrando na prática a diferença entre um site acessível e um site com barreiras.</p>
+
+        <!--
+          PROMPT SUGERIDO PARA GERAÇÃO DE VÍDEO POR IA:
+          "Vídeo explicativo de 60 segundos, estilo tela gravada (screencast) com narração em português do Brasil,
+          voz calma e didática. Mostra o cursor de foco do teclado percorrendo um site de compras: primeiro em uma
+          versão SEM acessibilidade (foco invisível, botões sem nome, imagem sem descrição, leitor de tela travando)
+          e depois na versão COM acessibilidade (contorno de foco visível em azul, botões nomeados, leitor de tela
+          lendo tudo com fluidez). Finalizar com o texto na tela: 'Acessibilidade não é extra. É básico.' Estética
+          limpa, fundo claro, legendas sincronizadas com a narração."
+        -->
+        <figure class="player-wrap">
+          <video controls poster="imagem-video-poster.jpg" aria-describedby="transcricao-video-desc">
+            <!-- Substituir pelo arquivo de vídeo gerado -->
+            <source src="video-acessibilidade.mp4" type="video/mp4">
+            <track kind="captions" src="video-acessibilidade.vtt" srclang="pt-BR" label="Português" default>
+            Seu navegador não é compatível com a exibição de vídeo. A transcrição completa está disponível abaixo.
+          </video>
+          <figcaption id="transcricao-video-desc">Vídeo com legendas embutidas; transcrição completa disponível no bloco abaixo.</figcaption>
+        </figure>
+
+        <details class="transcricao">
+          <summary>Ler a transcrição completa do vídeo</summary>
+          <div class="transcricao-texto">
+            <p><strong>[Narração]</strong> Imagine que você precisa comprar um remédio pela internet, mas não consegue enxergar a tela. É assim que a Marina navega todos os dias.</p>
+            <p><strong>[Descrição visual]</strong> A tela mostra o site de uma farmácia online. O cursor do mouse não aparece; em vez disso, um contorno de foco deveria indicar onde o teclado está, mas ele está ausente.</p>
+            <p><strong>[Narração]</strong> Marina aperta Tab repetidas vezes, mas não há nenhuma indicação visual de onde o foco está. O leitor de tela anuncia apenas "botão", sem dizer qual botão é.</p>
+            <p><strong>[Descrição visual]</strong> Um ícone de carrinho de compras pisca na tela, mas nenhum texto identifica sua função. Uma barra de progresso mostra "carregando" e trava por alguns segundos.</p>
+            <p><strong>[Narração]</strong> Ela tenta encontrar o campo de busca, mas o formulário não tem rótulo. O leitor de tela apenas repete "campo de edição em branco".</p>
+            <p><strong>[Descrição visual]</strong> A tela muda de cor de fundo, indicando a transição para a versão acessível do mesmo site.</p>
+            <p><strong>[Narração]</strong> Agora veja a mesma tarefa em um site pensado para acessibilidade. A cada tecla Tab, um contorno azul visível mostra exatamente onde está o foco.</p>
+            <p><strong>[Descrição visual]</strong> O contorno de foco azul percorre o menu, o campo de busca — agora rotulado como "Buscar remédio por nome" — e o botão "Adicionar ao carrinho".</p>
+            <p><strong>[Narração]</strong> O leitor de tela anuncia cada elemento com clareza: "Campo de busca, buscar remédio por nome". "Botão, adicionar ao carrinho, dipirona 500 miligramas".</p>
+            <p><strong>[Descrição visual]</strong> Marina sorri enquanto conclui a compra em poucos segundos, sem travas ou confusão.</p>
+            <p><strong>[Narração]</strong> A diferença entre essas duas experiências não é sorte, nem tecnologia cara. É a decisão de projetar pensando em todo mundo.</p>
+            <p><strong>[Texto na tela]</strong> "Acessibilidade não é extra. É básico."</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- ===================== PODCAST ===================== -->
+      <section id="podcast" class="secao-midia" aria-labelledby="titulo-podcast">
+        <h2 id="titulo-podcast">Podcast: Tecnologia assistiva no dia a dia</h2>
+        <p>Episódio em áudio, roteirizado com apoio de inteligência artificial, com uma conversa sobre o uso real de tecnologia assistiva.</p>
+
+        <!--
+          PROMPT SUGERIDO PARA GERAÇÃO DE ÁUDIO/PODCAST POR IA:
+          "Gere um áudio de podcast em português do Brasil, formato entrevista, cerca de 3 minutos, com duas vozes
+          distintas: uma apresentadora animada e didática, e um convidado usuário de tecnologia assistiva, tom
+          calmo e confiante. Tema: uso de leitores de tela e tecnologia assistiva no dia a dia. Adicionar levemente
+          música de fundo instrumental suave no início e no fim do episódio, sem sobrepor as vozes durante a fala."
+        -->
+        <figure class="player-wrap">
+          <audio controls aria-describedby="transcricao-podcast-desc">
+            <!-- Substituir pelo arquivo de áudio gerado -->
+            <source src="podcast-tecnologia-assistiva.mp3" type="audio/mpeg">
+            Seu navegador não é compatível com a reprodução de áudio. A transcrição completa está disponível abaixo.
+          </audio>
+          <figcaption id="transcricao-podcast-desc">Episódio 1 — Tecnologia assistiva no dia a dia (cerca de 3 minutos).</figcaption>
+        </figure>
+
+        <details class="transcricao">
+          <summary>Ler a transcrição completa do episódio</summary>
+          <div class="transcricao-texto">
+            <p><strong>[Trilha sonora]</strong> Música instrumental suave sobe e desce de volume, abrindo o episódio.</p>
+            <p><strong>[Apresentadora]</strong> Bem-vindos ao Sem Barreiras, o podcast que fala sobre tecnologia e inclusão. Hoje eu recebo o Diego, que usa tecnologia assistiva todos os dias. Diego, obrigada por vir.</p>
+            <p><strong>[Diego]</strong> Obrigado pelo convite! É um prazer estar aqui.</p>
+            <p><strong>[Apresentadora]</strong> Diego, para quem não sabe, me conta: o que muda no seu dia a dia por causa da tecnologia assistiva?</p>
+            <p><strong>[Diego]</strong> Basicamente tudo. Eu sou cego desde os 12 anos, e hoje uso um leitor de tela no computador e no celular. Ele lê em voz alta tudo que aparece na tela: textos, botões, menus. Sem isso, eu simplesmente não conseguiria usar um smartphone comum.</p>
+            <p><strong>[Apresentadora]</strong> E dá pra fazer tudo o que uma pessoa sem deficiência faz?</p>
+            <p><strong>[Diego]</strong> Em teoria, sim. Na prática, depende muito de como o site ou aplicativo foi construído. Se o desenvolvedor não pensou em acessibilidade, eu esbarro em barreiras. Às vezes um aplicativo de banco simplesmente não deixa eu confirmar uma transferência porque o botão de confirmar não tem nome nenhum para o leitor de tela.</p>
+            <p><strong>[Apresentadora]</strong> Isso parece frustrante.</p>
+            <p><strong>[Diego]</strong> É, e o pior é que geralmente é um detalhe pequeno de corrigir. Não precisa de tecnologia complexa, precisa só de atenção durante a criação do site.</p>
+            <p><strong>[Apresentadora]</strong> Você tem algum exemplo de site ou app que funciona bem?</p>
+            <p><strong>[Diego]</strong> Sim! Aplicativos de transporte por aplicativo, hoje em dia, costumam ser bem acessíveis. Eu consigo pedir uma corrida sozinho, sem ajuda de ninguém, e o app me avisa por voz quando o carro está chegando. Isso mudou muito minha independência.</p>
+            <p><strong>[Apresentadora]</strong> E o que você diria para quem está desenvolvendo um site hoje e nunca pensou em acessibilidade?</p>
+            <p><strong>[Diego]</strong> Eu diria: testem com o teclado, sem usar o mouse. Se vocês não conseguem usar o próprio site só com o teclado, uma parte dos seus usuários também não vai conseguir. E coloquem texto alternativo nas imagens, sempre. É simples e muda tudo.</p>
+            <p><strong>[Apresentadora]</strong> Ótimo conselho. Diego, muito obrigada por compartilhar sua experiência com a gente.</p>
+            <p><strong>[Diego]</strong> Eu que agradeço. Espero que ajude mais gente a pensar em inclusão desde o começo.</p>
+            <p><strong>[Trilha sonora]</strong> Música instrumental suave sobe novamente, encerrando o episódio.</p>
+          </div>
+        </details>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer" id="equipe">
+    <div class="footer-inner">
+      <div class="footer-equipe">
+        <h2>Sobre este projeto</h2>
+        <p>
+          O <strong>Sem Barreiras</strong> é um projeto educacional produzido por estudantes para
+          conscientizar sobre inclusão e acessibilidade digital.
+        </p>
+        <address class="footer-equipe-lista">
+          Desenvolvivdo por: <span>Thayssa Viana</span><span> Senai São José - Curso de Informática para Internet / TIIN/25/M1</span>
+        </address>
+      </div>
+      <p class="footer-mensagem">
+        Acessibilidade não é sobre atender uma norma. É sobre garantir que ninguém fique do lado de
+        fora da porta digital. Da próxima vez que você projetar, escrever ou publicar algo online,
+        pergunte-se: <em>quem eu estou deixando de fora sem perceber?</em>
+      </p>
+      <p class="footer-copy">&copy; 2026 Sem Barreiras. Projeto educacional sem fins comerciais.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
